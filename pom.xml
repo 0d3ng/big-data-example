@@ -34,7 +34,8 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>WordCount</mainClass>
+                            <!--                            <mainClass>jobsheet10.WordCount</mainClass>-->
+                            <mainClass>jobsheet11.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

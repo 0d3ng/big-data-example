@@ -8,3 +8,7 @@ Please use the command below
 
 ## In Hadoop
 Please use the command ```hadoop jar *.jar [folder input] [folder output]```
+
+**Disclaimer**
+1. for input file could spesific file, such as ```java -jar target/*.jar input/input01.txt output```
+2. Edit file `pom.xml` to change main class in properties `<mainClass>jobsheet11.App</mainClass>`
