@@ -7,6 +7,8 @@ import org.apache.hadoop.mapred.MapReduceBase;
 import org.apache.hadoop.mapred.Mapper;
 import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.Reporter;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 import java.io.IOException;
 
@@ -15,14 +17,16 @@ public class RevenueAggregationMapper extends MapReduceBase implements Mapper<Lo
     private IntWritable revenueWriteable = new IntWritable(0);
     private Text kotaText = new Text();
 
+    private final static Logger log = LogManager.getLogger(RevenueAggregationMapper.class);
+
     @Override
     public void map(LongWritable key, Text value, OutputCollector<Text, IntWritable> output, Reporter reporter)
-            throws IOException
-    {
+            throws IOException {
         String line = value.toString();
 
-        System.out.println("Ini adalah isi dari line");
-        System.out.println(line);
+//        System.out.println("Ini adalah isi dari line");
+//        System.out.println(line);
+        log.info("Ini adalah isi dari line {}" + line);
 
         // Pecah dulu berdasarkan '-'
         String[] split = line.split("-");
