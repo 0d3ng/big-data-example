@@ -35,7 +35,8 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <!--                            <mainClass>jobsheet10.WordCount</mainClass>-->
-                            <mainClass>jobsheet11.App</mainClass>
+                            <!--                            <mainClass>jobsheet11.App</mainClass>-->
+                            <mainClass>jobsheet12.kuis1.MapReduceDataset</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
