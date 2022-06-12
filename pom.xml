@@ -36,7 +36,8 @@
                             <addClasspath>true</addClasspath>
                             <!--                            <mainClass>jobsheet10.WordCount</mainClass>-->
                             <!--                            <mainClass>jobsheet11.App</mainClass>-->
-                            <mainClass>jobsheet12.kuis1.MapReduceDataset</mainClass>
+<!--                            <mainClass>jobsheet12.kuis1.MapReduceDataset</mainClass>-->
+                            <mainClass>jobsheet12.kuis2.JoinDriver</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
